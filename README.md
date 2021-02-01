@@ -3,7 +3,7 @@
 ## Overview
 
 
-This comming December taking place in Kimmel 804, Tech@NYU is hosting its first Future Arts Fest. I had the idea to do a projected web live installation using processing, and user contributions so attendies of the festival could interact with the art in a strange exciting way. The idea is still being developed, so I will give my best idea of what this project will be like below, and it is very subject to change as we plan and get more ideas.
+During December 2020, Tech@NYU hosted its first Future Arts Fest. I had the idea to do a projected web live installation using processing, and user contributions so attendies of the festival could interact with the art in a strange exciting way. The idea is still being developed, so I will give my best idea of what this project will be like below, and it is very subject to change as we plan and get more ideas.
 
 
 ## Data Model
