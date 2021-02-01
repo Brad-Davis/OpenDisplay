@@ -1,0 +1,31 @@
+<div id="titleCanvas">
+    <p style="display: none;" id="titleName">New Display</p>
+</div>
+
+<div id="container">
+    <form id="newDisplay" method="POST">
+        <h3>New Display</h3>
+        <hr> 
+        Name of Display: <input class="leftIn" type="text" name="name"><br>
+        <hr>
+        Color 1: <input class="colorInput" type="color" name="color1">
+        Color 2: <input class="colorInput" type="color" name="color2">
+        Color 3: <input type="color" name="color3"><br>
+        <hr>
+        Responsive: <select class="leftIn" name="responsive">
+            <option value="a">Audio</option>
+            <option value="v">Video</option>
+            <option value="b">Audio & Video</option>
+            <option value="n">Non-Responsive</option>
+        </select><br>
+        <hr>
+        Theme: <select class="leftIn" name="theme">
+            <option value="audio">Geometric</option>
+            <option value="video">Wavy</option>
+            <option value="both">Minimalist</option>
+        </select><br>
+        <hr>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+</div> 

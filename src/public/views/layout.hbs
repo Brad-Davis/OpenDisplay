@@ -1,0 +1,43 @@
+
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="../css/main.css" rel="stylesheet" type="text/css">
+        <script src="../js/p5.min.js"></script>
+        <script src="../js/sketch.js"></script>
+        <script src="../js/main.js"></script>
+    </head>
+
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/">Home</a>
+            <a href="/new-display">New Display</a>
+            <a href="/my-displays">Your Displays</a>
+            <a href="/login">Login/Register</a>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer;color:white;margin-left:10px" onclick="openNav()">&#9776;</span>
+        
+
+        {{{body}}}
+        
+        <script>
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            }
+            //Sidebar adapted from code on https://www.w3schools.com/howto/howto_js_sidenav.asp
+        </script>
+        <div id="topCorner"><p id="userName"></p></div>
+
+    </body>
+</html>

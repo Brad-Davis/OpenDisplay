@@ -1,0 +1,33 @@
+
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="../css/main.css" rel="stylesheet" type="text/css">
+        <script src="../js/p5.min.js"></script>
+        <script src="../js/p5.sound.min.js"></script>
+        <script src="../js/sketchOut.js"></script>
+    </head>
+
+    <body>
+        <p style="display: none;" id='color1'>{{color1}}</p>
+        <p style="display: none;" id='color2'>{{color2}}</p>
+        <p style="display: none;" id='color3'>{{color3}}</p>
+        {{#with display}}
+        <p style="display: none;" id='outReactive'>{{responsive}}</p>
+        <p style="display: none;" id='theme'>{{theme}}</p>
+        {{/with}}
+        <span style="font-size:30px;cursor:pointer;color:white;margin-left:10px" onclick="openNav()">&#x3c;</span>
+        
+
+      <script>
+            function openNav() {
+                window.location.href = "/my-displays";
+            }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<div id="titleCanvas">
+    <p style="display: none;" id="titleName">My Displays</p>
+</div>
+
+<div id="container">
+    <table style="width:80%">
+        {{#each display}}
+        <div class="displayContainer" >
+            <a href="/display?id={{_id}}" class="curDisplay">
+            <div class = "display">
+                <div class="color1" style="background-color: {{colors.[0]}};"></div>
+                <div class="color2" style="background-color: {{colors.[1]}};"></div>
+                <div class="color3" style="background-color: {{colors.[2]}};"></div>
+                <div class="displayName">{{name}}</div>
+            </div>
+            </a>
+        </div>
+        <!--<tr>
+            <h3>{{name}}</h3>
+            <td>{{user}}</td>
+            <td></td>
+            <td>{{colors}}</td>
+            <td>{{theme}}</td>
+            <td>{{responsive}}</td>
+        </tr>-->
+        {{/each}}
+        
+        <div class="displayContainer">
+            <a href="/new-display">
+            <div class = "display">
+                <div id="plus">+</div>
+                <div class="displayName">Add Another Display</div>
+            </div>
+            </a>
+        </div>
+        
+
+        <form name="outID" style="display: none" method="POST" action="/display">
+            <input style="display: none" id="sendID" value="id" type="text">
+        </form>
+        
+
+    </table>
+</div> 
+
+<!--<script>
+    aTags = document.getElementsByClassName('curDisplay');
+    if(aTags){
+        aTags.forEach((ele) => {
+            ele.addEventListener("click", function(){
+                document.getElementById('sendID').value = ele.dataset.value;
+                document.outID.submit()
+            });
+        });
+    }
+    
+</script>-->
+        
